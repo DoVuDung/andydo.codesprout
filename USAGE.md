@@ -59,6 +59,11 @@ After installation, you'll want to personalize CodeSprout for the best experienc
 - Progress tracking toward your personalized daily goal
 - Accurate measurement of your water consumption
 
+### Overhydration Protection
+- Automatic warnings when you exceed your daily water target
+- Configurable threshold (default: 150% of daily target)
+- Safety feature to prevent water intoxication
+
 ## Personalization
 
 ### Setting Your Physical Stats
@@ -112,6 +117,7 @@ If you prefer to set your own target:
 | `codeSprout.weight` | Your weight in kilograms | 65 |
 | `codeSprout.dailyWaterTarget` | Daily water target in ml (0 = auto-calculate) | 0 |
 | `codeSprout.interval` | Minutes between water reminders | 45 |
+| `codeSprout.overhydrationThreshold` | Overhydration warning threshold as percentage of daily target (0 = disabled) | 150 |
 
 ### Accessing Settings
 1. **Through Settings UI**:

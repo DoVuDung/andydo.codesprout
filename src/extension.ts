@@ -123,6 +123,12 @@ class CodeSproutViewProvider implements vscode.WebviewViewProvider {
 						todayRecord.consumedMl += 250;
 						todayRecord.targetMl = dailyTarget; // Update target in case it changed
 						
+						// Check for overhydration (based on configurable threshold)
+						const overhydrationThreshold = config.get<number>('overhydrationThreshold', 150);
+						if (overhydrationThreshold > 0 && todayRecord.consumedMl > dailyTarget * (overhydrationThreshold / 100)) {
+							vscode.window.showWarningMessage(`⚠️ You've consumed ${todayRecord.consumedMl}ml, which is significantly more than your daily target of ${dailyTarget}ml. Please be mindful of overhydration.`);
+						}
+						
 						// Save updated history
 						this._extensionContext.globalState.update('codeSprout.hydrationHistory', hydrationHistory);
 						

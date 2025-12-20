@@ -55,6 +55,11 @@
           "type": "number",
           "default": 0,
           "description": "Daily water target in ml (0 = auto-calculate)"
+        },
+        "codeSprout.overhydrationThreshold": {
+          "type": "number",
+          "default": 150,
+          "description": "Overhydration warning threshold as percentage of daily target (0 = disabled)"
         }
       }
     }
