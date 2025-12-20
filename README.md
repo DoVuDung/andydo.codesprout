@@ -30,6 +30,8 @@ CodeSprout is a VS Code extension that helps you stay hydrated while coding by g
 6. Track your daily progress and build up your hydration streak!
 7. View historical trends in the reporting section
 
+For detailed instructions, see our [Usage Guide](USAGE.md).
+
 > Note: CodeSprout provides general wellness reminders and is not a medical tool.
 
 ## Installation
