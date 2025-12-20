@@ -34,7 +34,7 @@ We welcome ideas for new features or improvements! When suggesting an enhancemen
 1. Fork the repository
 2. Clone your fork:
    ```
-   git clone https://github.com/your-username/codesprout.git
+   git clone https://github.com/DoVuDung/andydo.codesprout.git
    ```
 3. Install dependencies:
    ```
