@@ -3,7 +3,7 @@
   "displayName": "CodeSprout - Water Reminder & Wellness Companion",
   "description": "Grow your code, water your self.",
   "version": "0.0.1",
-  "publisher": "your-username",
+  "publisher": "165dca19-282b-64ae-b984-b421fcaea87a",
   "engines": {
     "vscode": "^1.74.0"
   },
