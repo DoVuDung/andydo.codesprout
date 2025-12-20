@@ -1,10 +1,10 @@
 {
-  "name": "andydo.codesprout",
-  "displayName": "Andy's CodeSprout - Water Reminder & Wellness Companion",
+  "name": "andydo-codesprout",
+  "displayName": "andydo.codesprout",
   "description": "Grow your code, water your self.",
   "version": "0.0.2",
   "publisher": "andydo-cascadia-font",
-  "icon": "media/sprout-icon.png",
+  
   "engines": {
     "vscode": "^1.74.0"
   },
