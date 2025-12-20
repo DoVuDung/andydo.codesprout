@@ -40,4 +40,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed incorrect PNG icon reference from package.json
 - Package configuration issues with publisher ID and prepublish script
 
+### Documentation
+- Updated USAGE.md with detailed steps on how to use the extension
+- Added UI elements section with information about the activity bar icon
+- Added visual reference to the new blue icon in the usage guide
+
 ### Removed

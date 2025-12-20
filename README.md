@@ -1,4 +1,4 @@
-# CodeSprout
+# Andy Do CodeSprout
 
 **Grow your code, water your self.**
 
@@ -7,55 +7,110 @@
 
 CodeSprout is a VS Code extension that helps you stay hydrated while coding by gamifying the process with a virtual plant companion.
 
-## Features
+---
 
-- **Virtual Plant Companion**: A cute pixel art plant that lives in your VS Code sidebar
-- **Hydration Reminders**: Gentle reminders to drink water at customizable intervals
-- **Streak Tracking**: Track your hydration habits over time
-- **Interactive Experience**: Water your plant with a satisfying button click
-- **Cute Animations**: Enjoy gentle animations that bring your plant to life
-- **Personalized Water Calculation**: Calculates recommended daily water intake based on your weight (Weight × 35 ml)
-- **Volume-Based Tracking**: Tracks actual water consumption with 250ml per drink
-- **Progress Monitoring**: See your daily progress toward your hydration goal
-- **Historical Reporting**: View weekly hydration trends with interactive charts
-- **Customizable Settings**: Easily adjust your height, weight, reminder intervals, and manual water targets
+## ✨ Features
 
-## How It Works
-
-1. Your virtual plant lives in the VS Code sidebar
-2. Set your physical stats (height and weight) for personalized hydration goals
-3. Set your preferred hydration interval (default: every 45 minutes)
-4. When it's time to drink, you'll receive a gentle notification
-5. Click "I Drank" to log 250ml of water consumption
-6. Track your daily progress and build up your hydration streak!
-7. View historical trends in the reporting section
-
-For detailed instructions, see our [Usage Guide](USAGE.md).
+* 🌱 **Virtual Plant Companion**: A cute pixel art plant that lives in your VS Code sidebar
+* 💧 **Hydration Reminders**: Gentle reminders to drink water at customizable intervals
+* 🔥 **Streak Tracking**: Track your hydration habits over time
+* 🎯 **Personalized Water Calculation**: Calculates recommended daily water intake based on your weight (Weight × 35 ml)
+* 📊 **Volume-Based Tracking**: Tracks actual water consumption with 250ml per drink
+* 📈 **Historical Reporting**: View weekly hydration trends with interactive charts
+* ⚙️ **Customizable Settings**: Easily adjust your height, weight, reminder intervals, and manual water targets
 
 > Note: CodeSprout provides general wellness reminders and is not a medical tool.
 
-## Installation
+---
+
+## 🖼️ Screenshots
+
+> *Coming soon*: Screenshots or GIF showing the plant companion and hydration tracking.
+
+---
+
+## 🔧 Requirements
+
+* VS Code version 1.74.0 or higher
+* No special system requirements
+
+---
+
+## ⚙️ Extension Settings
+
+This extension contributes the following settings:
+
+* `codeSprout.interval`: Set the interval between water reminders (in minutes, default: 45)
+* `codeSprout.height`: Your height in centimeters (default: 170)
+* `codeSprout.weight`: Your weight in kilograms (default: 65)
+* `codeSprout.dailyWaterTarget`: Daily water target in ml (0 = auto-calculate based on weight, default: 0)
+* `codeSprout.overhydrationThreshold`: Overhydration warning threshold as percentage of daily target (0 = disabled, default: 150)
+
+---
+
+## 🚀 Quick Start
 
 1. Install the extension from the VS Code Marketplace
-2. Reload VS Code when prompted
-3. Look for the sprout icon in the activity bar to open your garden
+2. Look for the blue water drop icon in the VS Code Activity Bar
+3. Click the icon to open the CodeSprout sidebar
+4. Click "Water Plant" each time you drink water (typically 250ml)
+5. Track your daily progress and build up your hydration streak!
 
-## Configuration
+For detailed instructions, see our [Usage Guide](USAGE.md).
 
-- `codeSprout.interval`: Set the interval between water reminders (in minutes)
-- `codeSprout.height`: Your height in centimeters
-- `codeSprout.weight`: Your weight in kilograms
-- `codeSprout.dailyWaterTarget`: Daily water target in ml (0 = auto-calculate based on weight)
+---
 
-## Contributing
+## 🐞 Known Issues
+
+* The plant companion is currently decorative and doesn't visually change based on hydration levels
+* Charts may take a moment to load with large datasets
+
+---
+
+## 📦 Release Notes
+
+### 0.0.3
+
+* Updated icon to a more visible blue water drop design
+* Improved documentation with clearer usage instructions
+* Fixed packaging issues with icon references
+
+### 0.0.2
+
+* Fixed icon display issues in VS Code Marketplace
+* Resolved package configuration problems
+
+### 0.0.1
+
+* Initial release: Virtual plant companion with hydration tracking
+* Personalized water intake calculation
+* Streak tracking and reporting features
+
+---
+
+## 📚 Resources
+
+* [CodeSprout Repository](https://github.com/DoVuDung/andydo.codesprout)
+* [Issue Tracker](https://github.com/DoVuDung/andydo.codesprout/issues)
+* [Usage Guide](USAGE.md)
+
+---
+
+## 🤝 Contributing
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 [![GitHub issues](https://img.shields.io/github/issues/DoVuDung/andydo.codesprout.svg)](https://github.com/DoVuDung/andydo.codesprout/issues)
 
 We welcome contributions! Please read our [Contribution Guide](CONTRIBUTING.md) for details on how to contribute to the project.
 
-## License
+---
+
+## 📄 License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+**Enjoy staying hydrated with CodeSprout!** 💧🌱
