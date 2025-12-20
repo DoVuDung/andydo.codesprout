@@ -196,7 +196,7 @@ class CodeSproutViewProvider implements vscode.WebviewViewProvider {
 				<div class="container">
 					<h1>My Garden</h1>
 					<div class="plant-container">
-						<div class="plant happy">*</div>
+						<div class="plant happy">💧</div>
 					</div>
 					<div class="stats">
 						<h3>Daily Goal: <span id="recommended">${recommendedWater}</span> ml</h3>
