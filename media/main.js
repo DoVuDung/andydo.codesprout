@@ -53,7 +53,7 @@ window.addEventListener('load', () => {
 function animatePlant() {
   // Change plant to happy state
   plantElement.className = 'plant happy';
-  plantElement.textContent = '🌿';
+  plantElement.textContent = '*';
   
   // Add animation class
   plantElement.classList.add('animate');

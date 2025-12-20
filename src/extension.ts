@@ -96,7 +96,7 @@ class CodeSproutViewProvider implements vscode.WebviewViewProvider {
 				case 'waterPlant':
 					{
 						// Handle watering the plant
-						vscode.window.showInformationMessage('Your plant feels refreshed! 💧');
+						vscode.window.showInformationMessage('Your plant feels refreshed!');
 						
 						// Get current date in YYYY-MM-DD format
 						const today = new Date().toISOString().split('T')[0];
@@ -188,12 +188,12 @@ class CodeSproutViewProvider implements vscode.WebviewViewProvider {
 			</head>
 			<body>
 				<div class="container">
-					<h1>🌱 My Garden</h1>
+					<h1>My Garden</h1>
 					<div class="plant-container">
-						<div class="plant happy">🌿</div>
+						<div class="plant happy">*</div>
 					</div>
 					<div class="stats">
-						<h3>💧 Daily Goal: <span id="recommended">${recommendedWater}</span> ml</h3>
+						<h3>Daily Goal: <span id="recommended">${recommendedWater}</span> ml</h3>
 						<p>Drank Today: <span id="consumed">0</span> ml</p>
 						<p>Progress: <span id="progress">0</span>%</p>
 						<p>Streak: <span id="streak">0</span> days</p>
@@ -201,14 +201,14 @@ class CodeSproutViewProvider implements vscode.WebviewViewProvider {
 						<p>Weight: <span id="weight">${weight}</span> kg</p>
 					</div>
 					<div class="report-section">
-						<h3>📊 Weekly Summary</h3>
+						<h3>Weekly Summary</h3>
 						<div id="chart-container">
 							<canvas id="hydrationChart" width="280" height="150"></canvas>
 						</div>
 						<button id="refreshChart">🔄 Refresh</button>
 					</div>
-					<button id="waterButton">💧 Water Plant</button>
-					<button id="settingsButton">⚙️ Settings</button>
+					<button id="waterButton">Water Plant</button>
+					<button id="settingsButton">Settings</button>
 				</div>
 				
 				<script nonce="${nonce}" src="${scriptUri}"></script>
@@ -308,7 +308,7 @@ function showReminder() {
 		'Snooze 10m'
 	).then((selection: string | undefined) => {
 		if (selection === 'I Drank') {
-			vscode.window.showInformationMessage('Good job staying hydrated! 💧');
+			vscode.window.showInformationMessage('Good job staying hydrated!');
 		} else if (selection === 'Snooze 10m') {
 			// Implement snooze functionality
 			vscode.window.showInformationMessage('Reminder snoozed for 10 minutes.');
