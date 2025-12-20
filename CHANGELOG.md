@@ -35,6 +35,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - Icon display issues in VS Code Marketplace
+- Updated SVG icon with proper sizing (128x128) for better visibility
+- Removed incorrect PNG icon reference from package.json
 - Package configuration issues with publisher ID and prepublish script
 
 ### Removed

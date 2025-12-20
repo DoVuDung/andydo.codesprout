@@ -2,9 +2,8 @@
   "name": "andydo-codesprout",
   "displayName": "andydo.codesprout",
   "description": "Grow your code, water your self.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "andydo-cascadia-font",
-  
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -14,6 +13,7 @@
   "activationEvents": [
     "onStartupFinished"
   ],
+  "icon": "/extension/icon.svg",
   "main": "./out/extension.js",
   "contributes": {
     "viewsContainers": {
