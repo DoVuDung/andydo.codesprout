@@ -205,7 +205,7 @@ class CodeSproutViewProvider implements vscode.WebviewViewProvider {
 						<div id="chart-container">
 							<canvas id="hydrationChart" width="280" height="150"></canvas>
 						</div>
-						<button id="refreshChart">🔄 Refresh</button>
+						<button id="refreshChart">Refresh</button>
 					</div>
 					<button id="waterButton">Water Plant</button>
 					<button id="settingsButton">Settings</button>
