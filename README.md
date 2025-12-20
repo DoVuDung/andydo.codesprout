@@ -48,7 +48,7 @@ CodeSprout is a VS Code extension that helps you stay hydrated while coding by g
 ## Contributing
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
-[![GitHub issues](https://img.shields.io/github/issues/your-username/codesprout.svg)](https://github.com/your-username/codesprout/issues)
+[![GitHub issues](https://img.shields.io/github/issues/DoVuDung/andydo.codesprout.svg)](https://github.com/DoVuDung/andydo.codesprout/issues)
 
 We welcome contributions! Please read our [Contribution Guide](CONTRIBUTING.md) for details on how to contribute to the project.
 
