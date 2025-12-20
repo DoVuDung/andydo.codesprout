@@ -34,5 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added reporting section with interactive chart visualization
 
 ### Fixed
+- Icon display issues in VS Code Marketplace
+- Package configuration issues with publisher ID and prepublish script
 
 ### Removed
