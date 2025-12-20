@@ -13,7 +13,7 @@
   "activationEvents": [
     "onStartupFinished"
   ],
-  "icon": "/extension/icon.svg",
+  "icon": "/media/icon.png",
   "main": "./out/extension.js",
   "contributes": {
     "viewsContainers": {
