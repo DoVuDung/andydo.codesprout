@@ -1,4 +1,4 @@
-# Contributing to CodeSprout 🌱
+# Contributing to CodeSprout
 
 Thank you for your interest in contributing to CodeSprout! This document provides guidelines and instructions for contributing to the project.
 
@@ -172,4 +172,4 @@ If you need help or have questions:
 - Open an issue with your question
 - Tag maintainers for urgent issues
 
-Thank you for contributing to CodeSprout! 🌱
+Thank you for contributing to CodeSprout!

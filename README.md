@@ -1,4 +1,4 @@
-# CodeSprout 🌱
+# CodeSprout
 
 **Grow your code, water your self.**
 
@@ -9,16 +9,16 @@ CodeSprout is a VS Code extension that helps you stay hydrated while coding by g
 
 ## Features
 
-- 🌿 **Virtual Plant Companion**: A cute pixel art plant that lives in your VS Code sidebar
-- ⏰ **Hydration Reminders**: Gentle reminders to drink water at customizable intervals
-- 📈 **Streak Tracking**: Track your hydration habits over time
-- 🎮 **Interactive Experience**: Water your plant with a satisfying button click
-- 🎨 **Cute Animations**: Enjoy gentle animations that bring your plant to life
-- 🧮 **Personalized Water Calculation**: Calculates recommended daily water intake based on your weight (Weight × 35 ml)
-- 💧 **Volume-Based Tracking**: Tracks actual water consumption with 250ml per drink
-- 📊 **Progress Monitoring**: See your daily progress toward your hydration goal
-- 📈 **Historical Reporting**: View weekly hydration trends with interactive charts
-- ⚙️ **Customizable Settings**: Easily adjust your height, weight, reminder intervals, and manual water targets
+- **Virtual Plant Companion**: A cute pixel art plant that lives in your VS Code sidebar
+- **Hydration Reminders**: Gentle reminders to drink water at customizable intervals
+- **Streak Tracking**: Track your hydration habits over time
+- **Interactive Experience**: Water your plant with a satisfying button click
+- **Cute Animations**: Enjoy gentle animations that bring your plant to life
+- **Personalized Water Calculation**: Calculates recommended daily water intake based on your weight (Weight × 35 ml)
+- **Volume-Based Tracking**: Tracks actual water consumption with 250ml per drink
+- **Progress Monitoring**: See your daily progress toward your hydration goal
+- **Historical Reporting**: View weekly hydration trends with interactive charts
+- **Customizable Settings**: Easily adjust your height, weight, reminder intervals, and manual water targets
 
 ## How It Works
 
