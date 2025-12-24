@@ -61,6 +61,39 @@
           "type": "number",
           "default": 150,
           "description": "Overhydration warning threshold as percentage of daily target (0 = disabled)"
+        },
+        "codeSprout.useMLRecommendations": {
+          "type": "boolean",
+          "default": false,
+          "description": "Use machine learning to provide personalized water intake recommendations"
+        },
+        "codeSprout.age": {
+          "type": "number",
+          "default": 30,
+          "description": "Your age in years"
+        },
+        "codeSprout.gender": {
+          "type": "string",
+          "enum": ["male", "female", "other"],
+          "default": "other",
+          "description": "Your gender for personalized recommendations"
+        },
+        "codeSprout.activityLevel": {
+          "type": "string",
+          "enum": ["sedentary", "light", "moderate", "active", "very_active"],
+          "default": "moderate",
+          "description": "Your activity level for personalized recommendations"
+        },
+        "codeSprout.climate": {
+          "type": "string",
+          "enum": ["cold", "temperate", "hot"],
+          "default": "temperate",
+          "description": "Your local climate for personalized recommendations"
+        },
+        "codeSprout.waterPerDrink": {
+          "type": "number",
+          "default": 250,
+          "description": "Amount of water in ml consumed per drink (default: 250ml)"
         }
       }
     }

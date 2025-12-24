@@ -1,4 +1,5 @@
 import * as vscode from 'vscode';
+import { WaterIntakeMLModel } from './ml-model';
 
 interface WebviewMessage {
   type: string;
@@ -38,11 +39,14 @@ class CodeSproutViewProvider implements vscode.WebviewViewProvider {
 	public static readonly viewType = 'codeSprout-view';
 
 	private _view?: vscode.WebviewView;
+	private _mlModel: WaterIntakeMLModel;
 
 	constructor(
 		private readonly _extensionUri: vscode.Uri,
 		private readonly _extensionContext: vscode.ExtensionContext
-	) { }
+	) { 
+		this._mlModel = new WaterIntakeMLModel();
+	}
 
 	public resolveWebviewView(
 		webviewView: vscode.WebviewView,
@@ -119,8 +123,10 @@ class CodeSproutViewProvider implements vscode.WebviewViewProvider {
 							hydrationHistory.records.push(todayRecord);
 						}
 						
-						// Add 250ml per drink (standard glass)
-						todayRecord.consumedMl += 250;
+						// Get the amount of water per drink from settings (default 250ml)
+						const waterPerDrink = config.get<number>('waterPerDrink', 250);
+						// Add configured amount per drink
+						todayRecord.consumedMl += waterPerDrink;
 						todayRecord.targetMl = dailyTarget; // Update target in case it changed
 						
 						// Check for overhydration (based on configurable threshold)
@@ -131,6 +137,18 @@ class CodeSproutViewProvider implements vscode.WebviewViewProvider {
 						
 						// Save updated history
 						this._extensionContext.globalState.update('codeSprout.hydrationHistory', hydrationHistory);
+						
+						// Add record to ML model for learning
+						const hourOfDay = new Date().getHours();
+						this._mlModel.addHydrationRecord({
+							date: today,
+							consumedMl: todayRecord.consumedMl,
+							targetMl: todayRecord.targetMl,
+							timeOfDay: hourOfDay,
+							activityLevel: 3, // Default medium activity
+							weather: 20, // Default temperature
+							externalFactors: [] // No external factors by default
+						});
 						
 						// Calculate streak
 						const streak = this._calculateStreak(hydrationHistory);
@@ -232,6 +250,34 @@ class CodeSproutViewProvider implements vscode.WebviewViewProvider {
 			return manualTarget;
 		}
 
+		// Check if ML-based recommendations are enabled
+		const useMLRecommendations = config.get<boolean>('useMLRecommendations', false);
+		if (useMLRecommendations) {
+			// Set user profile for ML model
+			const weight = config.get<number>('weight', 65);
+			const height = config.get<number>('height', 170);
+			const age = config.get<number>('age', 30);
+			const gender = config.get<string>('gender', 'other');
+			const activityLevel = config.get<string>('activityLevel', 'moderate');
+			const climate = config.get<string>('climate', 'temperate');
+			const season = new Date().toLocaleDateString('en-US', { month: 'long' }).toLowerCase();
+			
+			this._mlModel.setUserProfile({
+				weight,
+				height,
+				age,
+				gender: gender as 'male' | 'female' | 'other',
+				activityLevel: activityLevel as 'sedentary' | 'light' | 'moderate' | 'active' | 'very_active',
+				climate: climate as 'cold' | 'temperate' | 'hot',
+				season: season as 'spring' | 'summer' | 'fall' | 'winter'
+			});
+			
+			// Get ML-based recommendation
+			const mlRecommendation = this._mlModel.calculateRecommendedIntake();
+			return mlRecommendation.dailyTargetMl;
+		}
+
+		// Fallback to simple calculation
 		const weight = config.get<number>('weight', 65);
 		return this._calculateWaterIntake(weight);
 	}
