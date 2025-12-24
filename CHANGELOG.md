@@ -5,9 +5,14 @@ All notable changes to the CodeSprout extension will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.0.0] - 2025-12-24
 
 ### Added
+- Machine learning model for personalized water intake recommendations
+- Configuration option for water amount per drink (codeSprout.waterPerDrink)
+- Additional user profile settings (age, gender, activity level, climate)
+- ML-based recommendation toggle (codeSprout.useMLRecommendations)
+- Enhanced data collection for ML model training
 - Initial release of CodeSprout
 - Virtual plant companion in the sidebar
 - Hydration reminders with customizable intervals

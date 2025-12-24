@@ -2,7 +2,7 @@
   "name": "andydo-codesprout",
   "displayName": "andydo.codesprout",
   "description": "Grow your code, water your self.",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "publisher": "andydo-cascadia-font",
   "engines": {
     "vscode": "^1.74.0"
@@ -74,19 +74,33 @@
         },
         "codeSprout.gender": {
           "type": "string",
-          "enum": ["male", "female", "other"],
+          "enum": [
+            "male",
+            "female",
+            "other"
+          ],
           "default": "other",
           "description": "Your gender for personalized recommendations"
         },
         "codeSprout.activityLevel": {
           "type": "string",
-          "enum": ["sedentary", "light", "moderate", "active", "very_active"],
+          "enum": [
+            "sedentary",
+            "light",
+            "moderate",
+            "active",
+            "very_active"
+          ],
           "default": "moderate",
           "description": "Your activity level for personalized recommendations"
         },
         "codeSprout.climate": {
           "type": "string",
-          "enum": ["cold", "temperate", "hot"],
+          "enum": [
+            "cold",
+            "temperate",
+            "hot"
+          ],
           "default": "temperate",
           "description": "Your local climate for personalized recommendations"
         },

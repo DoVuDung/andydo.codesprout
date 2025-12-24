@@ -6,4 +6,6 @@ package-lock.json
 out/*.map
 *.md
 *.txt
-!media/sprout-icon.png
+*.js
+!out/extension.js
+!media/**
